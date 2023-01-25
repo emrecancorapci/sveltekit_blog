@@ -1,0 +1,47 @@
+body {
+    font-family: 'Roboto Condensed', serif;
+}
+  
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.bg-img{
+    background-position: center;
+    background-size: contain;
+    filter: brightness(.8);
+}
+
+.header-card-title {
+    min-height: 48px;
+}
+
+.tx-shadow-title {
+    text-shadow: 2px 2px 4px rgba(46, 46, 46, 0.3);
+}
+
+.card-featured {
+    min-height: 220px;
+}
+
