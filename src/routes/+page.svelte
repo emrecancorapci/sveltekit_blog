@@ -16,12 +16,14 @@
 	<div class="container d-none d-sm-block">
 		<HeaderPosts />
 	</div>
-	<div class="container justify-content-center mt-4">
-		<div class="row align-items-end">
-			<h1 class="col fw-bold">Featured Posts</h1>
-			<a href="#" class="col-auto h6 text-muted">See More</a>
+	<div class="container vw-100 mw-100 justify-content-center mt-4">
+		<div class="container align-items-end">
+			<div class="row">
+				<h1 class="col fw-bold">Featured Posts</h1>
+				<a href="#" class="col-auto h6 text-muted">See More</a>
+			</div>
 		</div>
-		<div class="container justify-content-center">
+		<div class="container vw-100 mw-100 justify-content-center">
 			<FeaturedPosts />
 		</div>
 	</div>
