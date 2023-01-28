@@ -6,7 +6,7 @@
 	import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 </script>
 
-<Header />
+<Header title="SvelteKit Blog"/>
 
 <main>
 	<slot />
