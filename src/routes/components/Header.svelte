@@ -1,8 +1,22 @@
 <script>
+	import { auth } from '$lib/store.js';
+
 	/**
 	 * @type {string}
 	 */
 	export let title;
+
+	/**
+	 * @type {boolean}
+	 */
+	let auth_value;
+
+	auth.subscribe((value) => (auth_value = value));
+
+	const changeAuth = () => {
+		auth.set(!auth_value);
+		console.log(auth_value);
+	};
 </script>
 
 <header>
@@ -45,6 +59,15 @@
 							<li><a class="dropdown-item" href="#">Something else here</a></li>
 						</ul>
 					</li>
+					{#if auth_value}
+						<li class="nav-item">
+							<button class="btn btn-dark" on:click={changeAuth}>Sign Out</button>
+						</li>
+					{:else}
+						<li class="nav-item">
+							<button class="btn btn-light" on:click={changeAuth}>Sign In</button>
+						</li>
+					{/if}
 				</ul>
 				<form class="d-flex" role="search">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
