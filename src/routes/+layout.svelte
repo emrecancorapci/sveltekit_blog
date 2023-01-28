@@ -6,12 +6,11 @@
 	import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 </script>
 
-<Header title="SvelteKit Blog"/>
+<Header title="SvelteKit Blog" />
 
 <main>
 	<slot />
 </main>
-
 
 <footer>
 	<p>Footer</p>
