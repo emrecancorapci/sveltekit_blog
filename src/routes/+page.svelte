@@ -1,4 +1,5 @@
 <script>
+	export let data;
 	import FeaturedPosts from './components/FeaturedPosts.svelte';
 	import HeaderPosts from './components/HeaderPosts.svelte';
 </script>
@@ -24,7 +25,7 @@
 			</div>
 		</div>
 		<div class="container vw-100 mw-100 justify-content-center">
-			<FeaturedPosts />
+			<FeaturedPosts posts={data.featuredPosts}/>
 		</div>
 	</div>
 	<div class="container mt-3">
