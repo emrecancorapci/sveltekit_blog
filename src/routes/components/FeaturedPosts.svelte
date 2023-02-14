@@ -2,11 +2,11 @@
 	import randImgUrl from '$lib/randImgUrl';
 	export let posts;
 
-	const imgStyle = (/** @type {string} */ url) => {
-		return `background-image: linear-gradient(to bottom,
+	const imgStyle = (/** @type {string} */ url) => 
+		`background-image: linear-gradient(to bottom,
         rgba(245, 246, 252, 0.52), rgba(55, 60, 107, 0.73)),
         url('${url}');`;
-	};
+	
 </script>
 
 <div class="row p-5 justify-content-center">
